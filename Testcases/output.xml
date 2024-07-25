@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.7 on darwin)" generated="2024-07-25T16:04:18.793727" rpa="false" schemaversion="5">
+<suite id="s1" name="Developperson multitest" source="/Users/macbook/Desktop/Test_Robotframework/Testcases/Developperson_multitest.robot">
+<test id="s1-t1" name="Successful Login" line="13">
+<kw name="Login to Application" owner="Developperson_mutimission">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:19.155029" level="INFO">Opening browser 'Chrome' to base url 'http://10.35.29.184/'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-25T16:04:19.154701" elapsed="4.607081"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-25T16:04:23.762918" elapsed="0.855018"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:24.620209" level="INFO">Typing text '64070507212' into text field 'xpath=//*[@id="username"]'.</msg>
+<arg>${Text_username}</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:24.618728" elapsed="0.734072"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-25T16:04:26.356133" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-25T16:04:25.353083" elapsed="1.003327"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:26.357677" level="INFO">Typing password into text field 'xpath=//*[@id="password"]'.</msg>
+<msg time="2024-07-25T16:04:26.411186" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${Text_password}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:26.356933" elapsed="0.210085"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:26.570008" level="INFO">Clicking button 'xpath=//*[@id="app"]/div/div/main/div/div/div/div/div[4]/form/div[4]/button'.</msg>
+<arg>${Button_login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:26.569265" elapsed="0.160834"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ROLE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:04:26.730750" elapsed="1.371754"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2024-07-25T16:04:19.153515" elapsed="8.949203"/>
+</kw>
+<kw name="Select And Submit Role" owner="Developperson_mutimission">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-25T16:04:29.104626" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-25T16:04:28.104179" elapsed="1.000715"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:29.105925" level="INFO">Clicking element 'xpath=/html/body/div[2]/div/div/div/div[2]/div[2]/div[2]/div/div/div/div[2]/div'.</msg>
+<arg>${ROLE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:29.105358" elapsed="0.174641"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-25T16:04:30.280913" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-25T16:04:29.280302" elapsed="1.000948"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:30.281986" level="INFO">Clicking button 'xpath=/html/body/div[2]/div/div/div/div[2]/div[3]/div[3]/button'.</msg>
+<arg>${SUBMITROLE}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:30.281612" elapsed="0.546484"/>
+</kw>
+<status status="PASS" start="2024-07-25T16:04:28.103463" elapsed="2.724805"/>
+</kw>
+<status status="PASS" start="2024-07-25T16:04:19.152709" elapsed="11.675942"/>
+</test>
+<test id="s1-t2" name="Add mission Personal multimission" line="17">
+<kw name="Select Mutimission In Mission" owner="Developperson_mutimission">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-25T16:04:33.830746" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-25T16:04:30.830330" elapsed="3.000586"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[1]/div[1]/div[1]/div[${numberbutton}]/button</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:04:33.831217" elapsed="0.507295"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:34.339154" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[1]/div[1]/div[1]/div[5]/button'.</msg>
+<arg>xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[1]/div[1]/div[1]/div[${numberbutton}]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:34.338774" elapsed="0.210105"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-25T16:04:35.552960" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-25T16:04:34.549466" elapsed="1.003794"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:35.554839" level="INFO">Typing text 'multi1' into text field 'xpath=//*[@id="Tab1MissionNameInput"]'.</msg>
+<arg>${NAMEMISSION}</arg>
+<arg>${nametest}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:35.553768" elapsed="0.257128"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SELECTDROPDOWNINSIDE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:04:35.812042" elapsed="0.080645"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:35.893584" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div/main/div/div/nav[2]/div/form/div/div[4]/div/div/div/div/div[3]/div'.</msg>
+<arg>${SELECTDROPDOWNINSIDE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:35.893011" elapsed="0.326090"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SELECTFIRST}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:04:36.219850" elapsed="0.357926"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:36.578949" level="INFO">Clicking element 'css=body &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(4) &gt; div:nth-child(1)'.</msg>
+<arg>css=body &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(${numberdropdown1}) &gt; div:nth-child(4) &gt; div:nth-child(1)</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:36.578172" elapsed="0.240848"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:36.820397" level="INFO">Clicking element 'xpath=//div[@class='v-list-item v-theme--myCustomLightTheme v-list-item--density-default v-list-item--one-line v-list-item--variant-text mx-10']//span[contains(text(),'สมรรถนะที่สนองตอบผลลัพธ์')]'.</msg>
+<arg>${SPACE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:36.819528" elapsed="0.506694"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SELECTDROPDOWNINSIDE2}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:04:37.342413" elapsed="0.076645"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:37.421119" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div/main/div/div/nav[2]/div/form/div/div[5]/div/div/div/div/div[3]/div'.</msg>
+<arg>${SELECTDROPDOWNINSIDE2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:37.420358" elapsed="0.559822"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SELECTFIRST2_1}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:04:37.981781" elapsed="0.414305"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:38.396815" level="INFO">Clicking element 'css=body &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(3) &gt; div:nth-child(4) &gt; div:nth-child(1)'.</msg>
+<arg>css=body &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(${numberdropdown2}) &gt; div:nth-child(4) &gt; div:nth-child(1)</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:38.396375" elapsed="0.740908"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:39.138352" level="INFO">Clicking element 'xpath=//div[@class='v-list-item v-theme--myCustomLightTheme v-list-item--density-default v-list-item--one-line v-list-item--variant-text mx-10']//span[contains(text(),'ส่วนที่หน่วยงานจะได้รับประโยชน์')]'.</msg>
+<arg>${SPACE1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:39.137705" elapsed="0.512173"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SELECTDROPDOWNINSIDE3}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:04:39.650231" elapsed="0.110447"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:39.763522" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div/main/div/div/nav[2]/div/form/div/div[6]/div/div/div/div/div[3]/div'.</msg>
+<arg>${SELECTDROPDOWNINSIDE3}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:39.761699" elapsed="0.487681"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SELECTFIRST3_1}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:04:40.249914" elapsed="0.032138"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:40.283253" level="INFO">Clicking element 'css=body &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(4) &gt; div:nth-child(4) &gt; div:nth-child(1)'.</msg>
+<arg>css=body &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(${numberdropdown3}) &gt; div:nth-child(4) &gt; div:nth-child(1)</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:40.282641" elapsed="0.343640"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-25T16:04:41.628967" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-25T16:04:40.626936" elapsed="1.002244"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:41.630026" level="INFO">Clicking button 'xpath=//*[@id="app"]/div/div/main/div/div/nav[2]/div/form/div/div[8]/div/div/div[2]/button'.</msg>
+<arg>${SUBMIT_BUTTONINSIDE}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:41.629591" elapsed="0.635345"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-25T16:04:45.266155" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-25T16:04:42.265202" elapsed="3.001109"/>
+</kw>
+<arg>multi1</arg>
+<arg>2</arg>
+<arg>3</arg>
+<arg>4</arg>
+<arg>5</arg>
+<status status="PASS" start="2024-07-25T16:04:30.829841" elapsed="14.436618"/>
+</kw>
+<kw name="Select Mutimission In Mission" owner="Developperson_mutimission">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-25T16:04:48.268518" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-25T16:04:45.267373" elapsed="3.001424"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[1]/div[1]/div[1]/div[${numberbutton}]/button</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:04:48.269269" elapsed="0.033316"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:48.303238" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[1]/div[1]/div[1]/div[6]/button'.</msg>
+<arg>xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[1]/div[1]/div[1]/div[${numberbutton}]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:48.302859" elapsed="0.185969"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-25T16:04:49.494294" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-25T16:04:48.490280" elapsed="1.004229"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:49.495208" level="INFO">Typing text 'multi2' into text field 'xpath=//*[@id="Tab1MissionNameInput"]'.</msg>
+<arg>${NAMEMISSION}</arg>
+<arg>${nametest}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:49.494791" elapsed="0.341659"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SELECTDROPDOWNINSIDE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:04:49.836892" elapsed="0.051379"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:49.888888" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div/main/div/div/nav[2]/div/form/div/div[4]/div/div/div/div/div[3]/div'.</msg>
+<arg>${SELECTDROPDOWNINSIDE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:49.888550" elapsed="0.332018"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SELECTFIRST}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:04:50.221003" elapsed="0.361880"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:50.583552" level="INFO">Clicking element 'css=body &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(5) &gt; div:nth-child(4) &gt; div:nth-child(1)'.</msg>
+<arg>css=body &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(${numberdropdown1}) &gt; div:nth-child(4) &gt; div:nth-child(1)</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:50.583164" elapsed="0.217617"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:50.801678" level="INFO">Clicking element 'xpath=//div[@class='v-list-item v-theme--myCustomLightTheme v-list-item--density-default v-list-item--one-line v-list-item--variant-text mx-10']//span[contains(text(),'สมรรถนะที่สนองตอบผลลัพธ์')]'.</msg>
+<arg>${SPACE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:50.801177" elapsed="0.414864"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SELECTDROPDOWNINSIDE2}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:04:51.216553" elapsed="0.041626"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:51.259369" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div/main/div/div/nav[2]/div/form/div/div[5]/div/div/div/div/div[3]/div'.</msg>
+<arg>${SELECTDROPDOWNINSIDE2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:51.258542" elapsed="0.570881"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SELECTFIRST2_1}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:04:51.829828" elapsed="0.305158"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:52.135878" level="INFO">Clicking element 'css=body &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(4) &gt; div:nth-child(1)'.</msg>
+<arg>css=body &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(${numberdropdown2}) &gt; div:nth-child(4) &gt; div:nth-child(1)</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:52.135348" elapsed="0.396101"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:52.532344" level="INFO">Clicking element 'xpath=//div[@class='v-list-item v-theme--myCustomLightTheme v-list-item--density-default v-list-item--one-line v-list-item--variant-text mx-10']//span[contains(text(),'ส่วนที่หน่วยงานจะได้รับประโยชน์')]'.</msg>
+<arg>${SPACE1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:52.531854" elapsed="0.531060"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SELECTDROPDOWNINSIDE3}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:04:53.063196" elapsed="0.266710"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:53.331949" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div/main/div/div/nav[2]/div/form/div/div[6]/div/div/div/div/div[3]/div'.</msg>
+<arg>${SELECTDROPDOWNINSIDE3}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:53.331277" elapsed="0.297956"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SELECTFIRST3_1}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:04:53.629666" elapsed="0.281538"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:53.912565" level="INFO">Clicking element 'css=body &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(3) &gt; div:nth-child(4) &gt; div:nth-child(1)'.</msg>
+<arg>css=body &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(${numberdropdown3}) &gt; div:nth-child(4) &gt; div:nth-child(1)</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:53.911561" elapsed="0.290551"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-25T16:04:55.205191" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-25T16:04:54.202606" elapsed="1.002744"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:04:55.205968" level="INFO">Clicking button 'xpath=//*[@id="app"]/div/div/main/div/div/nav[2]/div/form/div/div[8]/div/div/div[2]/button'.</msg>
+<arg>${SUBMIT_BUTTONINSIDE}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:04:55.205619" elapsed="0.312438"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-25T16:04:58.519502" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-25T16:04:55.518529" elapsed="3.001420"/>
+</kw>
+<arg>multi2</arg>
+<arg>5</arg>
+<arg>2</arg>
+<arg>3</arg>
+<arg>6</arg>
+<status status="PASS" start="2024-07-25T16:04:45.266903" elapsed="13.253851"/>
+</kw>
+<kw name="Select Mutimission In Mission" owner="Developperson_mutimission">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-25T16:05:01.525067" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-25T16:04:58.523493" elapsed="3.001808"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[1]/div[1]/div[1]/div[${numberbutton}]/button</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:05:01.526038" elapsed="0.031101"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:05:01.558022" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[1]/div[1]/div[1]/div[7]/button'.</msg>
+<arg>xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[1]/div[1]/div[1]/div[${numberbutton}]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:05:01.557524" elapsed="0.197678"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-25T16:05:02.757660" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-25T16:05:01.756206" elapsed="1.001704"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:05:02.759524" level="INFO">Typing text 'multi3' into text field 'xpath=//*[@id="Tab1MissionNameInput"]'.</msg>
+<arg>${NAMEMISSION}</arg>
+<arg>${nametest}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:05:02.758362" elapsed="0.294247"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SELECTDROPDOWNINSIDE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:05:03.053089" elapsed="0.037502"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:05:03.091238" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div/main/div/div/nav[2]/div/form/div/div[4]/div/div/div/div/div[3]/div'.</msg>
+<arg>${SELECTDROPDOWNINSIDE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:05:03.090886" elapsed="0.180871"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SELECTFIRST}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:05:03.272155" elapsed="0.279436"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:05:03.552228" level="INFO">Clicking element 'css=body &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(4) &gt; div:nth-child(1)'.</msg>
+<arg>css=body &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(${numberdropdown1}) &gt; div:nth-child(4) &gt; div:nth-child(1)</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:05:03.551863" elapsed="0.181146"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:05:03.734936" level="INFO">Clicking element 'xpath=//div[@class='v-list-item v-theme--myCustomLightTheme v-list-item--density-default v-list-item--one-line v-list-item--variant-text mx-10']//span[contains(text(),'สมรรถนะที่สนองตอบผลลัพธ์')]'.</msg>
+<arg>${SPACE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:05:03.734550" elapsed="0.226259"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SELECTDROPDOWNINSIDE2}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:05:03.962435" elapsed="0.037557"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:05:04.000855" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div/main/div/div/nav[2]/div/form/div/div[5]/div/div/div/div/div[3]/div'.</msg>
+<arg>${SELECTDROPDOWNINSIDE2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:05:04.000295" elapsed="0.410459"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SELECTFIRST2_1}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:05:04.411111" elapsed="0.286742"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:05:04.698815" level="INFO">Clicking element 'css=body &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(3) &gt; div:nth-child(4) &gt; div:nth-child(1)'.</msg>
+<arg>css=body &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(${numberdropdown2}) &gt; div:nth-child(4) &gt; div:nth-child(1)</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:05:04.698195" elapsed="0.301181"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:05:04.999979" level="INFO">Clicking element 'xpath=//div[@class='v-list-item v-theme--myCustomLightTheme v-list-item--density-default v-list-item--one-line v-list-item--variant-text mx-10']//span[contains(text(),'ส่วนที่หน่วยงานจะได้รับประโยชน์')]'.</msg>
+<arg>${SPACE1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:05:04.999653" elapsed="0.447586"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SELECTDROPDOWNINSIDE3}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:05:05.447546" elapsed="0.059860"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:05:05.508099" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div/main/div/div/nav[2]/div/form/div/div[6]/div/div/div/div/div[3]/div'.</msg>
+<arg>${SELECTDROPDOWNINSIDE3}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:05:05.507712" elapsed="0.232915"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SELECTFIRST3_1}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:05:05.740984" elapsed="0.259805"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:05:06.001612" level="INFO">Clicking element 'css=body &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(5) &gt; div:nth-child(4) &gt; div:nth-child(1)'.</msg>
+<arg>css=body &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(${numberdropdown3}) &gt; div:nth-child(4) &gt; div:nth-child(1)</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:05:06.001123" elapsed="0.140202"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-25T16:05:07.143436" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-25T16:05:06.142276" elapsed="1.001383"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:05:07.144555" level="INFO">Clicking button 'xpath=//*[@id="app"]/div/div/main/div/div/nav[2]/div/form/div/div[8]/div/div/div[2]/button'.</msg>
+<arg>${SUBMIT_BUTTONINSIDE}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:05:07.144048" elapsed="0.284729"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-25T16:05:10.477009" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-25T16:05:07.429050" elapsed="3.048803"/>
+</kw>
+<arg>multi3</arg>
+<arg>2</arg>
+<arg>3</arg>
+<arg>5</arg>
+<arg>7</arg>
+<status status="PASS" start="2024-07-25T16:04:58.522100" elapsed="11.956213"/>
+</kw>
+<status status="PASS" start="2024-07-25T16:04:30.829138" elapsed="39.649805"/>
+</test>
+<test id="s1-t3" name="Delete mission" line="23">
+<kw name="Delete Mutimission" owner="Developperson_mutimission">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[1]/div[1]/div[1]/div[${deletemul1}]/div[2]/div/div/div[2]/div[5]/button[3]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:05:10.481075" elapsed="0.038294"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:05:10.520030" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[1]/div[1]/div[1]/div[5]/div[2]/div/div/div[2]/div[5]/button[3]'.</msg>
+<arg>xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[1]/div[1]/div[1]/div[${deletemul1}]/div[2]/div/div/div[2]/div[5]/button[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:05:10.519611" elapsed="0.192397"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div[2]/div[2]/div[2]/div/div[4]/div/button[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:05:10.712413" elapsed="0.047754"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:05:10.760897" level="INFO">Clicking element 'xpath=/html/body/div[2]/div[2]/div[2]/div/div[4]/div/button[1]'.</msg>
+<arg>xpath=/html/body/div[2]/div[2]/div[2]/div/div[4]/div/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:05:10.760524" elapsed="0.130339"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-25T16:05:13.895190" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-25T16:05:10.891448" elapsed="3.003919"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[1]/div[1]/div[1]/div[${deletemul2}]/div[2]/div/div/div[2]/div[5]/button[3]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:05:13.895732" elapsed="0.025812"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:05:13.922216" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[1]/div[1]/div[1]/div[5]/div[2]/div/div/div[2]/div[5]/button[3]'.</msg>
+<arg>xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[1]/div[1]/div[1]/div[${deletemul2}]/div[2]/div/div/div[2]/div[5]/button[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:05:13.921776" elapsed="0.210241"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div[2]/div[2]/div[2]/div/div[4]/div/button[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:05:14.133271" elapsed="0.073583"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:05:14.207385" level="INFO">Clicking element 'xpath=/html/body/div[2]/div[2]/div[2]/div/div[4]/div/button[1]'.</msg>
+<arg>xpath=/html/body/div[2]/div[2]/div[2]/div/div[4]/div/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:05:14.207101" elapsed="0.156105"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-25T16:05:17.365406" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-25T16:05:14.363579" elapsed="3.002068"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[1]/div[1]/div[1]/div[${deletemul3}]/div[2]/div/div/div[2]/div[5]/button[3]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:05:17.366204" elapsed="0.026033"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:05:17.392959" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[1]/div[1]/div[1]/div[5]/div[2]/div/div/div[2]/div[5]/button[3]'.</msg>
+<arg>xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[1]/div[1]/div[1]/div[${deletemul3}]/div[2]/div/div/div[2]/div[5]/button[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:05:17.392496" elapsed="0.118198"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div[2]/div[2]/div[2]/div/div[4]/div/button[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-25T16:05:17.511268" elapsed="0.262435"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-25T16:05:17.774232" level="INFO">Clicking element 'xpath=/html/body/div[2]/div[2]/div[2]/div/div[4]/div/button[1]'.</msg>
+<arg>xpath=/html/body/div[2]/div[2]/div[2]/div/div[4]/div/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-25T16:05:17.773962" elapsed="0.118208"/>
+</kw>
+<arg>5</arg>
+<arg>5</arg>
+<arg>5</arg>
+<status status="PASS" start="2024-07-25T16:05:10.480384" elapsed="7.412070"/>
+</kw>
+<status status="PASS" start="2024-07-25T16:05:10.479595" elapsed="7.414235"/>
+</test>
+<status status="PASS" start="2024-07-25T16:04:18.795257" elapsed="59.102665"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Developperson multitest">Developperson multitest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

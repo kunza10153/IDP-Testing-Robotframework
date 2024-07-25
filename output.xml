@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.7 on darwin)" generated="2024-06-27T16:24:26.484411" rpa="false" schemaversion="5">
+<suite id="s1" name="Developpersontab2test" source="/Users/macbook/Desktop/TEST_POM/Testcases/Developpersontab2test.robot">
+<test id="s1-t1" name="Verify Text tab2" line="32">
+<kw name="Login to Application" owner="Developpersontab2">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-27T16:24:26.741195" level="INFO">Opening browser 'Chrome' to base url 'http://10.35.29.184/'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-27T16:24:26.740715" elapsed="3.700188"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-27T16:24:30.442896" elapsed="0.936151"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-27T16:24:31.380418" level="INFO">Typing text '64070507212' into text field 'xpath=//*[@id="username"]'.</msg>
+<arg>${Text_username}</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-27T16:24:31.379300" elapsed="0.632370"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-27T16:24:33.014882" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-27T16:24:32.012113" elapsed="1.003037"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-06-27T16:24:33.016450" level="INFO">Typing password into text field 'xpath=//*[@id="password"]'.</msg>
+<msg time="2024-06-27T16:24:33.066792" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${Text_password}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-27T16:24:33.015718" elapsed="0.143360"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-27T16:24:33.159653" level="INFO">Clicking button 'xpath=//*[@id="app"]/div/div/main/div/div/div/div/div[4]/form/div[4]/button'.</msg>
+<arg>${Button_login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-27T16:24:33.159357" elapsed="0.114685"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ROLE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-27T16:24:33.274427" elapsed="1.663839"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2024-06-27T16:24:26.738192" elapsed="8.200332"/>
+</kw>
+<kw name="Select And Submit Role" owner="Developpersontab2">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-27T16:24:35.941456" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-27T16:24:34.940527" elapsed="1.001169"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-27T16:24:35.942703" level="INFO">Clicking element 'xpath=/html/body/div[2]/div/div/div/div[2]/div[2]/div[2]/div/div/div/div[2]/div'.</msg>
+<arg>${ROLE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-27T16:24:35.942030" elapsed="0.202988"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-27T16:24:37.149912" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-27T16:24:36.145461" elapsed="1.004678"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-27T16:24:37.152017" level="INFO">Clicking button 'xpath=/html/body/div[2]/div/div/div/div[2]/div[3]/div[3]/button'.</msg>
+<arg>${SUBMITROLE}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-27T16:24:37.150815" elapsed="0.553949"/>
+</kw>
+<status status="PASS" start="2024-06-27T16:24:34.939631" elapsed="2.765462"/>
+</kw>
+<kw name="Verify Text In Tab2" owner="Developpersontab2">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-06-27T16:24:37.712068" level="INFO">Opening url 'http://10.35.29.184/development/64070507212'</msg>
+<arg>${MYURL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-06-27T16:24:37.710992" elapsed="0.207485"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${DEVERLOPPERSONTAB2}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-27T16:24:37.918762" elapsed="1.338491"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-27T16:24:39.257818" level="INFO">Clicking element 'xpath=//button[@value='two']//span[@class='v-btn__content']'.</msg>
+<arg>${DEVERLOPPERSONTAB2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-27T16:24:39.257516" elapsed="0.203998"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NUMBERMISSION2}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-27T16:24:39.461906" elapsed="1.573514"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-27T16:24:41.036376" level="INFO">Verifying element 'xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[2]/div[2]/div[2]/div/h2[2]' contains exact text '2'.</msg>
+<arg>${NUMBERMISSION2}</arg>
+<arg>${TEXTTEST1}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-06-27T16:24:41.035759" elapsed="0.048593"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NAMEMISSION_VERIFY2}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-27T16:24:41.084686" elapsed="0.042421"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-27T16:24:41.128350" level="INFO">Verifying element 'xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[2]/div[2]/div[2]/div/h2[3]' contains exact text 'เพื่อให้ทำงานได้ตาม Job Description'.</msg>
+<arg>${NAMEMISSION_VERIFY2}</arg>
+<arg>${TEXTTEST2}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-06-27T16:24:41.127418" elapsed="0.033830"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NAMEINMISSION_VERIFY2}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-27T16:24:41.161649" elapsed="0.042028"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-27T16:24:41.204282" level="INFO">Verifying element 'xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[2]/div[1]/div[3]/div[2]/div' contains exact text 'ภารกิจที่ 1 : test1'.</msg>
+<arg>${NAMEINMISSION_VERIFY2}</arg>
+<arg>${TEXTTEST3}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-06-27T16:24:41.203933" elapsed="0.037922"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SAMUTTANA_VERIFY2}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-27T16:24:41.242118" elapsed="0.039047"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-27T16:24:41.282324" level="INFO">Verifying element 'xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[2]/div[2]/div[3]/div[4]/div/div/div[2]/div[1]/div[1]/h3' contains exact text 'การสร้าง Product Mindset (by KMUTT4life)'.</msg>
+<arg>${SAMUTTANA_VERIFY2}</arg>
+<arg>${TEXTTEST4}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-06-27T16:24:41.281645" elapsed="0.031100"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LEARNINGAPPOINT_VERIFY2}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-27T16:24:41.313243" elapsed="0.028412"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-27T16:24:41.342478" level="INFO">Verifying element 'xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[2]/div[2]/div[3]/div[4]/div/div/div[2]/div[2]' contains exact text 'แสดงออกถึงหลักคิดแนวทางทำงานก่อนเริ่มโครงการอย่างมีระบบขั้นตอน ป้องกันความเสียหายที่อาจเกิดขึ้น'.</msg>
+<arg>${LEARNINGAPPOINT_VERIFY2}</arg>
+<arg>${TEXTTEST5}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-06-27T16:24:41.341989" elapsed="0.027033"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${METHODDEVELOP_VERIFY2}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-27T16:24:41.369299" elapsed="0.025268"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-27T16:24:41.395364" level="INFO">Verifying element 'xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[2]/div[2]/div[3]/div[4]/div/div/div[2]/div[3]' contains exact text 'เรียนรู้ด้วยตนเอง : การฝึกฝน หรือปฏิบัติด้วยตนเองจากช่องทางการเรียนรู้ต่างๆ เช่น การอ่านหนังสือ การค้นคว้าผ่าน Internet หรือ e-Learning'.</msg>
+<arg>${METHODDEVELOP_VERIFY2}</arg>
+<arg>${TEXTTEST6}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-06-27T16:24:41.394860" elapsed="0.026999"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${AGREEMENTDEVELOP_VERIFY2}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-27T16:24:41.422223" elapsed="0.033361"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-27T16:24:41.456482" level="INFO">Verifying element 'xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[2]/div[2]/div[3]/div[4]/div/div/div[2]/div[4]' contains exact text 'แปดหนึ่งแปดแปดสองสิบหก'.</msg>
+<arg>${AGREEMENTDEVELOP_VERIFY2}</arg>
+<arg>${TEXTTEST7}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-06-27T16:24:41.455973" elapsed="0.026181"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EXPENSE_VERIFY2}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-27T16:24:41.482429" elapsed="0.027289"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-27T16:24:41.510357" level="INFO">Verifying element 'xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[2]/div[2]/div[3]/div[4]/div/div/div[2]/div[5]' contains exact text '9,999 บาท'.</msg>
+<arg>${EXPENSE_VERIFY2}</arg>
+<arg>${TEXTTEST8}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-06-27T16:24:41.509964" elapsed="0.023230"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TIME_VERIFY2}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-27T16:24:41.533494" elapsed="0.025902"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-27T16:24:41.559994" level="INFO">Verifying element 'Strip Whitespace' contains exact text 'xpath=//*[@id="app"]/div/div/main/div/div/div[4]/div[3]/div/div/div[2]/div[2]/div[3]/div[4]/div/div/div[2]/div[6]'.</msg>
+<msg time="2024-06-27T16:24:41.916829" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-179.png"&gt;&lt;img src="selenium-screenshot-179.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-27T16:24:41.917109" level="FAIL">Element with locator 'Strip Whitespace' not found.</msg>
+<arg>Strip Whitespace</arg>
+<arg>${TIME_VERIFY2}</arg>
+<arg>${TEXTTEST9}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="FAIL" start="2024-06-27T16:24:41.559643" elapsed="0.359998">Element with locator 'Strip Whitespace' not found.</status>
+</kw>
+<arg>${TEXTTEST1}</arg>
+<arg>${TEXTTEST2}</arg>
+<arg>${TEXTTEST3}</arg>
+<arg>${TEXTTEST4}</arg>
+<arg>${TEXTTEST5}</arg>
+<arg>${TEXTTEST6}</arg>
+<arg>${TEXTTEST7}</arg>
+<arg>${TEXTTEST8}</arg>
+<arg>${TEXTTEST9}</arg>
+<doc>This test case verifies that the text of an element is as expected.</doc>
+<status status="FAIL" start="2024-06-27T16:24:37.707541" elapsed="4.212441">Element with locator 'Strip Whitespace' not found.</status>
+</kw>
+<status status="FAIL" start="2024-06-27T16:24:26.737236" elapsed="15.183341">Element with locator 'Strip Whitespace' not found.</status>
+</test>
+<status status="FAIL" start="2024-06-27T16:24:26.486062" elapsed="15.435598"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Developpersontab2test">Developpersontab2test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-06-27T16:24:26.734307" level="WARN">Error in file '/Users/macbook/Desktop/TEST_POM/PageObjects/Strip_Whitespace.robot' on line 8: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>
